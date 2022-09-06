@@ -3,13 +3,14 @@
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 import HelloWorld from './components/HelloWorld.vue';
 import NavigationBar from './components/NavigationBar.vue';
+import FrontPage from './components/FrontPage.vue';
 </script>
 
 <template>
   <div>
-    <NavigationBar>No?</NavigationBar>
+    <NavigationBar></NavigationBar>
+    <FrontPage>No?</FrontPage>
   </div>
-  <HelloWorld msg="Vite + Vue" />
 </template>
 
 <style scoped>

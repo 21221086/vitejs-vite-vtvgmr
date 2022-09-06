@@ -1,142 +1,57 @@
 <template>
-    <nav class="nav-wrapper">
-                
-        <div class="logo">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 10.935v2.131l-8 3.947v-2.23l5.64-2.783-5.64-2.79v-2.223l8 3.948zm-16 3.848l-5.64-2.783 5.64-2.79v-2.223l-8 3.948v2.131l8 3.947v-2.23zm7.047-10.783h-2.078l-4.011 16h2.073l4.016-16z"/></svg>
-            <div class="ml-2">WebDevs</div>
+
+
+
+  <header class="w-full h-16 bg-indigo-600 drop-shadow-lg">
+      <div class="container px-4 md:px-0 h-full mx-auto flex justify-between items-center">
+          <!-- Logo Here -->
+          <a class="text-yellow-400 text-xl font-bold italic" href="https://www.kindacode.com">KINDA<span
+                  class="text-white">CODE</span></a>
+
+          <!-- Menu links here -->
+          <ul id="menu" class="hidden fixed top-0 right-0 px-10 py-16 bg-gray-800 z-50
+              md:relative md:flex md:p-0 md:bg-transparent md:flex-row md:space-x-6">
+
+              <li class="md:hidden z-90 fixed top-4 right-6">
+                  <a href="javascript:void(0)" class="text-right text-white text-4xl"
+                      onclick="toggleMenu()">&times;</a>
+              </li>
+
+              <li>
+                  <a class="text-white opacity-70 hover:opacity-100 duration-300" href="#">Home</a>
+              </li>
+              <li>
+                  <a class="text-white opacity-70 hover:opacity-100 duration-300" href="#">Something</a>
+              </li>
+              <li>
+                  <a class="text-white opacity-70 hover:opacity-100 duration-300" href="#">Forums</a>
+              </li>
+
+              <li>
+                  <a class="text-white opacity-70 hover:opacity-100 duration-300" href="#">About</a>
+              </li>
+              <li>
+                  <a class="text-white opacity-70 hover:opacity-100 duration-300" href="#">Contact</a>
+              </li>
+          </ul>
+
+          <!-- This is used to open the menu on mobile devices -->
+          <div class="flex items-center md:hidden">
+              <button class="text-white text-4xl font-bold opacity-70 hover:opacity-100 duration-300"
+                  onclick="toggleMenu()">
+                  &#9776;
+              </button>
+          </div>
         </div>
-        <div class="flex">
-            <div v-for="item in nav">
-                <a :href="item.link" 
-                    class="link-item"
-                    :class="[ (item.subLinkModal) ? 'link-active' : '' ]"
-                    @click="toggleSubModal(item)">
-                        {{ item.title }}
-                </a>
-                
-                <template v-if="item.subLinks && item.subLinkModal">
-                    <div class="sublinks">
-                        <a v-for="subLink in item.subLinks" :href="subLink.link" class="link-item">{{ subLink.title }}</a>
-                    </div>
-                </template>
-            </div>
-        </div>
-        
-    </nav>
+  </header> 
 </template>
 
+<!-- Javascript Code -->
 <script>
-    export default {
-        data: function () {
-            return {
-                nav: [
-                    { title: 'Home', link: '#home' },
-                    { title: 'About', link: '#about', subLinks: [
-                        { title: 'History', link: '#history' },
-                        { title: 'Our Team', link: '#team' },
-                    ], subLinkModal: false },
-                    { title: 'Services', link: '#services', subLinks: [
-                        { title: 'Audio', link: '#audio' },
-                        { title: 'Video', link: '#video' },
-                        { title: 'Web', link: '#web' },
-                    ], subLinkModal: false },
-                ]
-            }
-        },
-        
-        methods: {
-            toggleSubModal: function (item) {
-                if (item.subLinks) {
-                    item.subLinkModal = ! item.subLinkModal;
-                }
-            }
-        }
-    }
+var menu = document.getElementById('menu');
+function toggleMenu() {
+  menu.classList.toggle('hidden');
+  menu.classList.toggle('w-full');
+  menu.classList.toggle('h-screen');
+}
 </script>
-
-<style scoped>
-body {
-    background: #fff;
-    color: #777;
-}
-.logo {
-    color: #3d3d3d;
-    display: flex;
-}
-.nav-wrapper {
-    background: #ffffff;
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 25px;
-}
-.link-item {
-    color: #555ae4;
-    font-weight: bold;
-    font-size: 14px;
-    padding: 5px 10px;
-    border-radius: 5px;
-    margin-left: 5px;
-    position: relative;
-}
-.link-item:active,
-.link-item:hover,
-.link-active {
-    background: #555ae4;
-    color: #fff;
-}
-.sublinks {
-    position: absolute;
-    top: 40px;
-    right: 10px;
-    align-items: flex-end;
-    display: flex;
-    flex-direction: column;
-    background: #3d3d3d;
-    padding: 10px;
-    border-radius: 5px;
-}
-.sublinks > a {
-    color: #eee;
-    width: 100px;
-}
-.hero-box {
-    background: #f3f3ff;
-    display: flex;
-}
-.hero-box-left {
-    width: 400px;
-    margin: 25px;
-}
-.hero-box-right {
-    width: 100%;
-    margin: 25px; 
-}
-.large-text {
-    font-size: 30px;
-}
-.medium-text {
-    margin-top: 10px;
-}
-.input-wrapper {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px;
-}
-.input-wrapper > label {
-    font-size: 14px;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-.input-wrapper > input {
-    background: transparent;
-    border: 1px solid #555ae4;
-    border-radius: 5px;
-    padding: 5px;
-}
-.input-wrapper > button {
-    background: #555ae4;
-    color: #fff;
-    border-radius: 5px;
-    padding: 10px;
-}
-</style>
