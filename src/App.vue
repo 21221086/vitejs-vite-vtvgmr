@@ -4,6 +4,7 @@
 import HelloWorld from './components/HelloWorld.vue';
 import NavigationBar from './components/NavigationBar.vue';
 import FrontPage from './components/FrontPage.vue';
+import UpcomingSports from './components/UpcomingSports.vue';
 </script>
 
 <template>

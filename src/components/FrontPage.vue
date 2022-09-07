@@ -14,8 +14,8 @@
     "
   >
     <main class="bg-sky-300 md:w-2/3 lg:w-3/4 px-5 py-40">
-      <h1 class="text-2xl md:text-4xl">Upcoming Seasons</h1>
-      <upcomingSports></upcomingSports>
+      <h1 class="text-2xl md:text-4xl">Upcoming Sports</h1>
+      <UpcomingSports></UpcomingSports>
     </main>
     <aside class="bg-green-300 md:w-1/3 lg:w-1/4 px-5 py-40">
       <h1 class="text-2xl md:text-4xl">Sidebar</h1>
@@ -28,10 +28,10 @@
 </template>
 
 <script>
-import upcomingSports from './UpcomingSports';
+import UpcomingSports from './UpcomingSports';
+// import QuickSearch from './mainComponents/QuickSearch'
 
 export default {
-
-  components {upcomingSports}
-}
+  components: { UpcomingSports },
+};
 </script>

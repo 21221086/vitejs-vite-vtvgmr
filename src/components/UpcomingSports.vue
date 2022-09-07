@@ -33,5 +33,10 @@
 </template>
 
 <script>
-export default {};
+export default {
+  name: 'UpcomingSports'
+  props: {
+    label: String,
+  },
+};
 </script>
