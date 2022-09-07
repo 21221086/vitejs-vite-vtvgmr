@@ -28,8 +28,7 @@
 </template>
 
 <script>
-import UpcomingSports from './UpcomingSports';
-// import QuickSearch from './mainComponents/QuickSearch'
+import UpcomingSports from './UpcomingSports.vue';
 
 export default {
   components: { UpcomingSports },

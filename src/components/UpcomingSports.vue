@@ -34,7 +34,7 @@
 
 <script>
 export default {
-  name: 'UpcomingSports'
+  name: 'UpcomingSports',
   props: {
     label: String,
   },
