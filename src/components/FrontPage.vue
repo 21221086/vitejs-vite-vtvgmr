@@ -1,23 +1,37 @@
 <template>
+  <header class="bg-amber-400 p-5">
+    <h1 class="text-2xl md:text-4xl">Header</h1>
+  </header>
 
-    <header class="bg-amber-400 p-5">
-        <h1 class="text-2xl md:text-4xl">Header</h1>
-    </header>
+  <div
+    class="
+      bg-white
+      my-5
+      w-full
+      flex flex-col
+      space-y-4
+      md:flex-row md:space-x-4 md:space-y-0
+    "
+  >
+    <main class="bg-sky-300 md:w-2/3 lg:w-3/4 px-5 py-40">
+      <h1 class="text-2xl md:text-4xl">Upcoming Seasons</h1>
+      <upcomingSports></upcomingSports>
+    </main>
+    <aside class="bg-green-300 md:w-1/3 lg:w-1/4 px-5 py-40">
+      <h1 class="text-2xl md:text-4xl">Sidebar</h1>
+    </aside>
+  </div>
 
-    <div class="bg-white my-5 w-full flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
-        <main class="bg-sky-300 md:w-2/3 lg:w-3/4 px-5 py-40">
-            <h1 class="text-2xl md:text-4xl">Main Content</h1>
-            This is the main content
-        </main>
-        <aside class="bg-green-300 md:w-1/3 lg:w-1/4 px-5 py-40">
-            <h1 class="text-2xl md:text-4xl">Sidebar</h1>
-        </aside>
-    </div>
-
-    <footer class="bg-slate-800 mt-auto p-5">
-        <h1 class="text-2xl md:text-4xl text-white">Footer</h1>
-    </footer>
-
+  <footer class="bg-slate-800 mt-auto p-5">
+    <h1 class="text-2xl md:text-4xl text-white">Footer</h1>
+  </footer>
 </template>
 
-<script></script>
+<script>
+import upcomingSports from './UpcomingSports';
+
+export default {
+
+  components {upcomingSports}
+}
+</script>

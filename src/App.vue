@@ -9,7 +9,7 @@ import FrontPage from './components/FrontPage.vue';
 <template>
   <div>
     <NavigationBar></NavigationBar>
-    <FrontPage>No?</FrontPage>
+    <FrontPage></FrontPage>
   </div>
 </template>
 
