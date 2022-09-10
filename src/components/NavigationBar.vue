@@ -2,7 +2,7 @@
 
 
 
-  <header class="w-full h-16 bg-indigo-600 drop-shadow-lg">
+  <header class="w-full h-16 bg-zinc-900 drop-shadow-lg">
       <div class="container px-4 md:px-0 h-full mx-auto flex justify-between items-center">
           <!-- Logo Here -->
           <a class="text-yellow-400 text-xl font-bold italic" href="https://www.kindacode.com">KINDA<span
