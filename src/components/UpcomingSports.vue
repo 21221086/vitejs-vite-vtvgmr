@@ -18,10 +18,13 @@
       >
         <td class="p-2">{{ league.name }}</td>
         <td class="p-2">{{ league.minAge }} - {{ league.maxAge }}</td>
-        <td class="p-2">K-12</td>
-        <td class="p-2">Oct 10, 2022</td>
-        <td class="p-2">Oct 15, 2022</td>
-        <td class="p-2">7 Weeks</td>
+        <td class="p-2">{{ league.minGrade }} - {{ league.maxGrade }}</td>
+        <td class="p-2">{{ league.registrationDeadline }}</td>
+        <td class="p-2">{{ league.seasonStart }}</td>
+        <td class="p-2">
+          Rec: {{ league.recDuration }} Weeks <br />
+          Comp: {{ league.compDuration }} Weeks
+        </td>
         <td class="p-2"><PencilIcon></PencilIcon></td>
       </tr>
     </tbody>

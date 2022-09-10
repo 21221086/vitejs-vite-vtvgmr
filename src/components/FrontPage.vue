@@ -23,19 +23,31 @@ export default {
   components: { UpcomingSports },
   data: function () {
     return {
-    leagues: [
-      {
-        name: 'Soccer',
-        minAge: 6,
-        maxAge: 18,
-      },
-      {
-        name: 'Baseball',
-        minAge: 6,
-        maxAge: 18,
-      },
-    ],
-    }
+      leagues: [
+        {
+          name: 'Fall Soccer',
+          minAge: 6,
+          maxAge: 18,
+          minGrade: 'K',
+          maxGrade: '12',
+          registrationDeadline: 'Oct 15, 2022',
+          seasonStart: 'Oct 21, 2022',
+          recDuration: '7',
+          compDuration: '8',
+        },
+        {
+          name: 'Fall Baseball',
+          minAge: 6,
+          maxAge: 18,
+          minGrade: 'K',
+          maxGrade: '12',
+          registrationDeadline: 'Oct 18, 2022',
+          seasonStart: 'Oct 21, 2022',
+          recDuration: '7',
+          compDuration: '8',
+        },
+      ],
+    };
   },
 };
 </script>
