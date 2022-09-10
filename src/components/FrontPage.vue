@@ -7,7 +7,7 @@
     <div class="bg-zinc-400 px-5 py-40">
       <h1 class="text-2xl md:text-4xl text-stone-900">Upcoming Leagues</h1>
       <br />
-      <UpcomingSports></UpcomingSports>
+      <UpcomingSports :upcomingLeagues="leagues"></UpcomingSports>
     </div>
   </div>
 
@@ -21,5 +21,21 @@ import UpcomingSports from './UpcomingSports.vue';
 
 export default {
   components: { UpcomingSports },
+  data: function () {
+    return {
+    leagues: [
+      {
+        name: 'Soccer',
+        minAge: 6,
+        maxAge: 18,
+      },
+      {
+        name: 'Baseball',
+        minAge: 6,
+        maxAge: 18,
+      },
+    ],
+    }
+  },
 };
 </script>
