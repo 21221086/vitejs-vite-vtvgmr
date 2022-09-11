@@ -10,6 +10,7 @@ import FrontPage from './components/FrontPage.vue';
   <div>
     <NavigationBar></NavigationBar>
     <FrontPage></FrontPage>
+    <router-view>About</router-view>
   </div>
 </template>
 
