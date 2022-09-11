@@ -4,13 +4,14 @@
 import HelloWorld from './components/HelloWorld.vue';
 import NavigationBar from './components/NavigationBar.vue';
 import FrontPage from './components/FrontPage.vue';
+import About from './components/About.vue';
 </script>
 
 <template>
   <div>
+    <router-view>About</router-view>
     <NavigationBar></NavigationBar>
     <FrontPage></FrontPage>
-    <router-view>About</router-view>
   </div>
 </template>
 

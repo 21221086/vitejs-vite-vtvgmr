@@ -12,7 +12,7 @@ const routes = [
   {
     path: '/about',
     name: 'About',
-    component: () => import('./components/FrontPage.vue'),
+    component: () => import('./components/About.vue'),
   },
 ];
 
@@ -21,6 +21,6 @@ const router = createRouter({
   routes,
 });
 
-export default router;
+// export default router;
 
 createApp(App).mount('#app');

@@ -33,7 +33,7 @@ export default {
           maxGrade: '12',
           registrationDeadline: 'Oct 15, 2022',
           seasonStart: 'Oct 21, 2022',
-          duration: '8',
+          duration: '7',
         },
         {
           sport: 'Soccer',
