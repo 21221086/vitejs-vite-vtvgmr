@@ -14,7 +14,7 @@
           <router-link to="/" class="text-white opacity-70 hover:opacity-100 duration-300">Home</router-link>
         </li>
         <li>
-          <a class="text-white opacity-70 hover:opacity-100 duration-300" href="#">Something</a>
+          <a class="text-white opacity-70 hover:opacity-100 duration-300" href="#">Registration</a>
         </li>
         <li>
           <a class="text-white opacity-70 hover:opacity-100 duration-300" href="#">Forums</a>
@@ -39,8 +39,8 @@
 
 <!-- Javascript Code -->
 <script>
-import About from './About.vue';
-import Home from './Home.vue';
+import About from '../pages/About.vue';
+import Home from '../pages/Home.vue';
 
 var menu = document.getElementById('menu');
 function toggleMenu() {

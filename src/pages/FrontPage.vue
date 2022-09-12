@@ -1,7 +1,5 @@
 <template>
-  <header class="bg-gray-200 p-5">
-    <h1 class="text-2xl md:text-4xl">Every Kid. Every Sport.</h1>
-  </header>
+
 
   <div class="bg-white w-full flex flex-col md:flex-row md:space-y-0">
     <div class="bg-zinc-900 px-5 py-40">
@@ -34,6 +32,7 @@ export default {
           registrationDeadline: 'Oct 15, 2022',
           seasonStart: 'Oct 21, 2022',
           duration: '7',
+          url: '/registration'
         },
         {
           sport: 'Soccer',
@@ -45,6 +44,7 @@ export default {
           registrationDeadline: 'Oct 15, 2022',
           seasonStart: 'Oct 21, 2022',
           duration: '8',
+          url: '/registration'
         },
         {
           sport: 'Baseball',
@@ -56,6 +56,7 @@ export default {
           registrationDeadline: 'Oct 18, 2022',
           seasonStart: 'Oct 21, 2022',
           duration: '7',
+          url: '/registration'
         },
         {
           sport: 'Baseball',
@@ -67,6 +68,7 @@ export default {
           registrationDeadline: 'Oct 18, 2022',
           seasonStart: 'Oct 21, 2022',
           duration: '8',
+          url: '/registration'
         },
       ],
     };

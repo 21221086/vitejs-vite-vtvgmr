@@ -22,14 +22,16 @@
         <td class="p-2">{{ league.registrationDeadline }}</td>
         <td class="p-2">{{ league.seasonStart }}</td>
         <td class="p-2">{{ league.duration }} Weeks</td>
-        <td class="p-2"><PencilIcon></PencilIcon></td>
+        <td class="p-2">
+          <router-link :to="league.url">
+          <PencilIcon></PencilIcon></router-link></td>
       </tr>
     </tbody>
   </table>
 </template>
 
 <script>
-import PencilIcon from './PencilIcon.vue';
+import PencilIcon from '../components/PencilIcon.vue';
 
 export default {
   name: 'UpcomingSports',
