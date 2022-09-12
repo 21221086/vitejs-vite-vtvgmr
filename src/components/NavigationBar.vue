@@ -11,7 +11,7 @@
         </li>
 
         <li>
-          <a class="text-white opacity-70 hover:opacity-100 duration-300" href="#">Home</a>
+          <router-link to="/" class="text-white opacity-70 hover:opacity-100 duration-300">Home</router-link>
         </li>
         <li>
           <a class="text-white opacity-70 hover:opacity-100 duration-300" href="#">Something</a>
@@ -21,7 +21,7 @@
         </li>
 
         <li>
-          <a class="text-white opacity-70 hover:opacity-100 duration-300" href="#">About</a>
+          <router-link to="/about" class="text-white opacity-70 hover:opacity-100 duration-300">About</router-link>
         </li>
         <li>
           <a class="text-white opacity-70 hover:opacity-100 duration-300" href="#">Contact</a>
@@ -39,6 +39,9 @@
 
 <!-- Javascript Code -->
 <script>
+import About from './About.vue';
+import Home from './Home.vue';
+
 var menu = document.getElementById('menu');
 function toggleMenu() {
   menu.classList.toggle('hidden');

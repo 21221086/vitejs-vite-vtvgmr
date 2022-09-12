@@ -3,15 +3,12 @@
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 import HelloWorld from './components/HelloWorld.vue';
 import NavigationBar from './components/NavigationBar.vue';
-import FrontPage from './components/FrontPage.vue';
 import About from './components/About.vue';
 </script>
 
 <template>
   <div>
     <NavigationBar></NavigationBar>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
     <router-view />
   </div>
 </template>
