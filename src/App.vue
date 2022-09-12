@@ -9,9 +9,10 @@ import About from './components/About.vue';
 
 <template>
   <div>
-    <router-view>About</router-view>
     <NavigationBar></NavigationBar>
-    <FrontPage></FrontPage>
+    <router-link to="/">Home</router-link> |
+    <router-link to="/about">About</router-link>
+    <router-view />
   </div>
 </template>
 

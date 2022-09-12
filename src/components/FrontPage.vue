@@ -1,6 +1,6 @@
 <template>
   <header class="bg-gray-200 p-5">
-    <h1 class="text-2xl md:text-4xl">Every kid should get to play!</h1>
+    <h1 class="text-2xl md:text-4xl">Every Kid. Every Sport.</h1>
   </header>
 
   <div class="bg-white w-full flex flex-col md:flex-row md:space-y-0">

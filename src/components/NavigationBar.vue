@@ -1,17 +1,6 @@
 <template>
   <header class="w-full h-16 bg-zinc-900 drop-shadow-lg">
-    <div
-      class="
-        container
-        px-4
-        md:px-0
-        h-full
-        mx-auto
-        flex
-        justify-between
-        items-center
-      "
-    >
+    <div class="container px-4 md:px-0 h-full mx-auto flex justify-between items-center">
       <!-- Logo Here -->
       <a
         class="text-yellow-400 text-xl font-bold italic"
@@ -21,26 +10,9 @@
 
       <!-- Menu links here -->
       <ul
-        id="menu"
-        class="
-          hidden
-          fixed
-          top-0
-          right-0
-          px-10
-          py-16
-          bg-gray-800
-          z-50
-          md:relative md:flex md:p-0 md:bg-transparent md:flex-row md:space-x-6
-        "
-      >
+        id="menu" class="hidden fixed top-0 right-0 px-10 py-16 bg-gray-800 z-50 md:relative md:flex md:p-0 md:bg-transparent md:flex-row md:space-x-6">
         <li class="md:hidden z-90 fixed top-4 right-6">
-          <a
-            href="javascript:void(0)"
-            class="text-right text-white text-4xl"
-            onclick="toggleMenu()"
-            >&times;</a
-          >
+          <a href="javascript:void(0)" class="text-right text-white text-4xl" onclick="toggleMenu()">&times;</a>
         </li>
 
         <li>
