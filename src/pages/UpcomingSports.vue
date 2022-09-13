@@ -13,7 +13,7 @@
     </thead>
     <tbody>
       <tr
-        v-for="(league, key) in upcomingLeagues"
+        v-for="(league, key) in leagues"
         class="even:bg-amber-100 odd:bg-blue-100"
       >
         <td class="p-2">{{ league.sport }}</td>
@@ -23,8 +23,10 @@
         <td class="p-2">{{ league.seasonStart }}</td>
         <td class="p-2">{{ league.duration }} Weeks</td>
         <td class="p-2">
-          <router-link :to="league.url">
-          <PencilIcon></PencilIcon></router-link></td>
+          <router-link :to="{path: league.url, query: {league: JSON.stringify(league)}}">
+            <PencilIcon></PencilIcon>
+          </router-link>
+        </td>
       </tr>
     </tbody>
   </table>
@@ -35,7 +37,7 @@ import PencilIcon from '../components/PencilIcon.vue';
 
 export default {
   name: 'UpcomingSports',
-  props: ['upcomingLeagues'],
+  props: ['leagues'],
   components: { PencilIcon },
 };
 </script>

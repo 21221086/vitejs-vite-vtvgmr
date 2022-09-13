@@ -15,9 +15,13 @@ const routes = [
     component: About,
   },
   {
-    path: '/registration',
+    path: '/register',
     name: 'Register',
     component: Register,
+    props(route) {
+      console.log('route; ', route)
+      return {league: route.query.league}
+    }
   },
 ];
 

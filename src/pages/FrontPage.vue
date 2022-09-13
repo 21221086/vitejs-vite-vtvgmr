@@ -5,7 +5,7 @@
     <div class="bg-zinc-900 px-5 py-40">
       <h1 class="text-2xl md:text-4xl text-stone-100">Upcoming Leagues</h1>
       <br />
-      <UpcomingSports :upcomingLeagues="leagues"></UpcomingSports>
+      <UpcomingSports :leagues="leagues"></UpcomingSports>
     </div>
   </div>
 
@@ -32,7 +32,7 @@ export default {
           registrationDeadline: 'Oct 15, 2022',
           seasonStart: 'Oct 21, 2022',
           duration: '7',
-          url: '/registration'
+          url: '/register'
         },
         {
           sport: 'Soccer',
@@ -44,7 +44,7 @@ export default {
           registrationDeadline: 'Oct 15, 2022',
           seasonStart: 'Oct 21, 2022',
           duration: '8',
-          url: '/registration'
+          url: '/register'
         },
         {
           sport: 'Baseball',
@@ -56,7 +56,7 @@ export default {
           registrationDeadline: 'Oct 18, 2022',
           seasonStart: 'Oct 21, 2022',
           duration: '7',
-          url: '/registration'
+          url: '/register'
         },
         {
           sport: 'Baseball',
@@ -68,7 +68,7 @@ export default {
           registrationDeadline: 'Oct 18, 2022',
           seasonStart: 'Oct 21, 2022',
           duration: '8',
-          url: '/registration'
+          url: '/register'
         },
       ],
     };
