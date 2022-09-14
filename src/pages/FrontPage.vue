@@ -3,7 +3,7 @@
     <div class="bg-zinc-900 p-40">
       <h1 class="text-2xl md:text-4xl text-stone-100">Upcoming Leagues</h1>
       <br />
-      <UpcomingSports :leagues="leagues"></UpcomingSports>
+      <UpcomingSports class="w-full" :leagues="leagues"></UpcomingSports>
     </div>
   </div>
 

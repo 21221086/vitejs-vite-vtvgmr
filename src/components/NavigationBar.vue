@@ -35,8 +35,6 @@
 
 <!-- Javascript Code -->
 <script>
-import About from '../pages/About.vue';
-import Home from '../pages/Home.vue';
 
 
 export default {

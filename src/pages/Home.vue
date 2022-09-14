@@ -7,8 +7,8 @@
 </template>
 
 <script>
-import FrontPage from './FrontPage.vue';
 import NavigationBar from '../components/NavigationBar.vue';
+import FrontPage from './FrontPage.vue';
 import Banner from '../components/Banner.vue';
 
 export default {
