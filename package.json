@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build-css": "tailwindcss build src/styles.css -i src/styles.css -o public/styles.css"
   },
   "dependencies": {
     "bootstrap": "^5.2.0",
