@@ -46,7 +46,9 @@
         </div>
 
         <div class="grid grid-cols-1 mt-5 mx-7">
-          <label class="border text-left uppercase md:text-sm text-xs text-gray-500 text-light font-semibold">Registration Type</label>
+          <label class="border text-left uppercase md:text-sm text-xs text-gray-500 text-light font-semibold">Registration Type
+            <InfoIcon class="inline"></InfoIcon>
+          </label>
           <select class="py-2 px-3 rounded-lg border-2 border-purple-300 mt-1 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent">
             <option>Team</option>
             <option>Player</option>
@@ -109,6 +111,7 @@
 <script>
 import NavigationBar from '../components/NavigationBar.vue';
 import Banner from '../components/Banner.vue'
+import InfoIcon from '../components/InfoIcon.vue'
 import FrontPage from '../pages/FrontPage.vue'
 export default {
   data: function () {
@@ -118,7 +121,7 @@ export default {
     }
   },
   props: ['league'],
-  components: { FrontPage, Banner, NavigationBar  },
+  components: { FrontPage, Banner, NavigationBar, InfoIcon },
   methods: {
     displayForm (formToShow) {
       console.log('formToShow: ', formToShow)
