@@ -46,9 +46,11 @@
         </div>
 
         <div class="grid grid-cols-1 mt-5 mx-7">
-          <label class="border text-left uppercase md:text-sm text-xs text-gray-500 text-light font-semibold">Registration Type
-            <InfoIcon class="inline"></InfoIcon>
+          <InfoText v-show="true" textToDisplay="Are you a coach registering a team or a parent registering a player?"></InfoText>
+          <label class="text-left uppercase md:text-sm text-xs text-gray-500 text-light font-semibold">Registration Type
+            <InfoIcon v-on:click="showRegistrationHover" class="inline"></InfoIcon>
           </label>
+            
           <select class="py-2 px-3 rounded-lg border-2 border-purple-300 mt-1 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent">
             <option>Team</option>
             <option>Player</option>
@@ -112,16 +114,18 @@
 import NavigationBar from '../components/NavigationBar.vue';
 import Banner from '../components/Banner.vue'
 import InfoIcon from '../components/InfoIcon.vue'
+import InfoText from '../components/InfoText.vue'
 import FrontPage from '../pages/FrontPage.vue'
 export default {
   data: function () {
     return {
       showFrontPage: true,
-      formToShow: 'Sport'
+      formToShow: 'Sport',
+      registrationHover: false
     }
   },
   props: ['league'],
-  components: { FrontPage, Banner, NavigationBar, InfoIcon },
+  components: { FrontPage, Banner, NavigationBar, InfoIcon, InfoText },
   methods: {
     displayForm (formToShow) {
       console.log('formToShow: ', formToShow)
@@ -129,6 +133,10 @@ export default {
     },
     submitForm () {
       console.log('Form Submitted')
+    },
+    showRegistrationHover() {
+      this.registrationHover = !this.registrationHover
+      console.log('this.registrationHover: ', this.registrationHover)
     }
   }
 };
