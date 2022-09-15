@@ -83,7 +83,7 @@
         </div>
         <div class="grid grid-cols-1 mt-5 mx-7">
           <label for="exampleTel0" class="uppercase md:text-sm text-xs text-gray-500 text-light font-semibold">Phone input</label>
-          <input type="tel" class="py-2 px-3 rounded-lg border-2 border-purple-300 mt-1 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" id="exampleTel0" placeholder="Phone input"/>
+          <input v-model="phoneNumber" type="text" v-on:input="acceptNumber" class="py-2 px-3 rounded-lg border-2 border-purple-300 mt-1 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" id="exampleTel0" placeholder="Phone input"/>
         </div>
         <div class="grid grid-cols-1 mt-5 mx-7">
           <label class="uppercase md:text-sm text-xs text-gray-500 text-light font-semibold">Input 1</label>
@@ -129,7 +129,8 @@ export default {
       showFrontPage: true,
       formToShow: 'Sport',
       leagueHover: false,
-      registrationHover: false
+      registrationHover: false,
+      phoneNumber: '',
     }
   },
   props: ['league'],
@@ -141,6 +142,10 @@ export default {
     },
     submitForm () {
       console.log('Form Submitted')
+    },
+    acceptNumber() {
+      var x = this.phoneNumber.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
+      this.phoneNumber = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
     }
   }
 };
