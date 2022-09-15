@@ -5,8 +5,16 @@
     <div class="bg-zinc-900 p-40">
       <h1 class="text-2xl md:text-4xl text-stone-100">Here at OliviaSports we are offering a different approach to sports!</h1>
       <br>
+      <div class="grid grid-cols-2 flex flex-col p-5">
+        <div class="mx-5 p-2 rounded-lg border-2 border-purple-300 bg-white text-stone-900">
+          Competition
+        </div>
+        <div class="mx-5 p-2 rounded-lg border-2 border-purple-300 bg-white text-stone-900">
+          Sports
+        </div>  
+      </div>
       <div class="text-stone-100">
-        Some people love the daily grind and fierce competition of sports.  Others just want the opportunity to learn. Some just want to play competetive sports without dedicating their life to it.  <br><br>We believe that every kid should get to play every sport at their level.
+        Some people love the daily grind and fierce competition of sports.  Others just want the opportunity to learn, while some just want to play competetive sports without dedicating their life to it. Or perhaps dedicate their time to multiple sports.  <br><br>We believe that every kid should get to play every sport at their level.
       </div>
       <br>
       <div class="text-stone-100">
