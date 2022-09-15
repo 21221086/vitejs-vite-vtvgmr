@@ -4,9 +4,7 @@
 
 <script>
 export default {
-  name: 'textToDisplay',
-  props: {
-    label: String,
-  },
+  name: 'InfoText',
+  props: ['textToDisplay'],
 };
 </script>

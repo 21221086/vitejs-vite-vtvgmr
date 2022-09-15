@@ -46,7 +46,7 @@
         </div>
 
         <div class="grid grid-cols-1 mt-5 mx-7">
-          <InfoText v-show="true" textToDisplay="Are you a coach registering a team or a parent registering a player?"></InfoText>
+          <InfoText v-show="registrationHover" textToDisplay="Are you a coach registering a team or a parent registering a player?"></InfoText>
           <label class="text-left uppercase md:text-sm text-xs text-gray-500 text-light font-semibold">Registration Type
             <InfoIcon v-on:click="showRegistrationHover" class="inline"></InfoIcon>
           </label>
