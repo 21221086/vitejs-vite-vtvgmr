@@ -5,11 +5,11 @@
     <div class="bg-zinc-900 p-40">
       <h1 class="text-2xl md:text-4xl text-stone-100">Here at OliviaSports we are offering a different approach to sports!</h1>
       <br>
-      <div class="grid grid-cols-2 flex flex-col p-5">
-        <div class="mx-5 p-2 rounded-lg border-2 border-purple-300 bg-white text-stone-900">
+      <div class="grid md:grid-cols-2 flex flex-col flex-row p-5">
+        <div class="mx-10 p-2 rounded-lg border-4 border-yellow-400 bg-white text-stone-900">
           Competition
         </div>
-        <div class="mx-5 p-2 rounded-lg border-2 border-purple-300 bg-white text-stone-900">
+        <div class="mx-10 p-2 rounded-xl border-4 border-yellow-400 bg-white text-stone-900">
           Sports
         </div>  
       </div>
