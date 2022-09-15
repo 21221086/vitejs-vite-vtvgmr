@@ -37,7 +37,10 @@
         </div>
 
         <div class="grid grid-cols-1 mt-5 mx-7">
-          <label class="uppercase md:text-sm text-xs text-gray-500 text-light font-semibold">League</label>
+          <InfoText v-show="leagueHover" textToDisplay="Competition Level"></InfoText>
+          <label class="text-left uppercase md:text-sm text-xs text-gray-500 text-light font-semibold">League
+            <InfoIcon v-on:click="leagueHover = !leagueHover" class="inline"></InfoIcon>
+          </label>
           <select class="py-2 px-3 rounded-lg border-2 border-purple-300 mt-1 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent">
             <option>Recreational</option>
             <option>Competetive</option>
@@ -48,7 +51,7 @@
         <div class="grid grid-cols-1 mt-5 mx-7">
           <InfoText v-show="registrationHover" textToDisplay="Are you a coach registering a team or a parent registering a player?"></InfoText>
           <label class="text-left uppercase md:text-sm text-xs text-gray-500 text-light font-semibold">Registration Type
-            <InfoIcon v-on:click="showRegistrationHover" class="inline"></InfoIcon>
+            <InfoIcon v-on:click="registrationHover = !registrationHover" class="inline"></InfoIcon>
           </label>
             
           <select class="py-2 px-3 rounded-lg border-2 border-purple-300 mt-1 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent">
@@ -121,6 +124,7 @@ export default {
     return {
       showFrontPage: true,
       formToShow: 'Sport',
+      leagueHover: false,
       registrationHover: false
     }
   },
@@ -133,10 +137,6 @@ export default {
     },
     submitForm () {
       console.log('Form Submitted')
-    },
-    showRegistrationHover() {
-      this.registrationHover = !this.registrationHover
-      console.log('this.registrationHover: ', this.registrationHover)
     }
   }
 };
