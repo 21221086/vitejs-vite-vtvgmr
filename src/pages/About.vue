@@ -5,20 +5,20 @@
     <div class="bg-zinc-900 p-40">
       <h1 class="text-2xl md:text-4xl text-stone-100">Here at <a class="text-yellow-400 text-2xl md:text-4xl font-bold italic">Olivia<span class="text-stone-100">Sports</span></a> we offer a different approach to sports with a few distinct changes.</h1>
       <br>
-      <div class="grid md:grid-cols-2 flex flex-col flex-row p-5">
-        <div v-on:click="showCompInfo" class="mx-10 p-2 rounded-lg border-4 border-yellow-400 bg-white text-stone-900">
+      <div class="grid md:grid-cols-2 flex flex-col flex-row p-2">
+        <button v-on:click="showCompInfo" class="m-2 p-2 rounded-lg border-4 border-yellow-400 bg-white text-stone-900">
           Competition
-        </div>
-        <div v-on:click="showSportsInfo" class="mx-10 p-2 rounded-xl border-4 border-yellow-400 bg-white text-stone-900">
+        </button>
+        <button v-on:click="showSportsInfo" class="m-2 p-2 rounded-xl border-4 border-yellow-400 bg-white text-stone-900">
           Sports
-        </div>  
+        </button>  
       </div>
       <div v-show="displaySportsInfo" class="border-4 border-yellow-400 text-stone-900 bg-stone-100 border-4 border-yellow-400">
         We plan to offer as many sport leagues as possible with each league occuring at least twice a year. As time and interest dictate, we will add new sports and new leagues. Have any suggesstion? Email us <a href="#" class="uppercase text-red-600 font-bold">here</a> <br><br>Want to play multiple sports? EASY. Just coordiante practices with your coaches. Game times for each sport and age will be offset allowing your player to seamlessly juggle their athletic schedules.
 
       </div>
       <div v-show="displayCompInfo" class="border-4 border-yellow-400 text-stone-900 bg-stone-100 border-4 border-yellow-400">
-        Some people love the daily grind and fierce competition of sports.  Others just want the opportunity to learn, while many just want to play competetive sports without dedicating a large amount of their time. Perhaps they want to dedicate their time to another hobby or multiple sports yet still find enjoyment in the sport, social atmosphere, and the competition. <br><br>Here at <a class="text-yellow-400 text-xl font-bold italic">Olivia<span class="text-stone-900">Sports</span></a> we aim to help everyone accomplish their goals. We believe that every kid should get to play every sport at their level.
+        Some people love the daily grind and fierce competition of sports.  Others are new and just want to learn. Many just want to play without dedicating a large amount of their time. Perhaps they want to dedicate their time to another hobby or multiple sports yet still find enjoyment in the social atmosphere and the competition. <br><br>Here at <a class="text-yellow-400 text-xl font-bold italic">Olivia<span class="text-stone-900">Sports</span></a> we aim to help everyone accomplish their goals. We believe that <span class="font-bold uppercase">every</span> kid should get to play <span class="font-bold uppercase">every</span> sport at their level.
         <div class="text-stone-900">
           Our goal is to offer as many sports as possible at 3 distinct levels.  
           <ol type="A">

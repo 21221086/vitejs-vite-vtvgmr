@@ -3,7 +3,6 @@
   <NavigationBar></NavigationBar>
   <Banner></Banner>
   <FrontPage></FrontPage>
-  <div>Hi</div>
 </template>
 
 <script>
