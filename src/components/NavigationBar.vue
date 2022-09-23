@@ -14,6 +14,9 @@
           <router-link to="/" class="text-white opacity-70 hover:opacity-100 duration-300">Home</router-link>
         </li>
         <li>
+          <NavigationDropdown header="Sports" options="Baseball"></NavigationDropdown>
+        </li>
+        <li>
            <router-link to="/register" class="text-white opacity-70 hover:opacity-100 duration-300">Registration</router-link>
         </li>
         <li>
@@ -36,6 +39,7 @@
 <!-- Javascript Code -->
 <script>
 
+import NavigationDropdown from './NavigationDropdown.vue'
 
 export default {
  
@@ -47,6 +51,7 @@ export default {
   mounted() {
     this.menuVisible = true
   },
+  components: {NavigationDropdown},
   methods: {
     toggleMenu() {
       console.log('menuVisible: ', this.menuVisible)
